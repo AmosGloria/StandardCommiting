@@ -15,7 +15,7 @@
               <li><a href="index.html">Home</a></li>
               <!-- <li><a href="register.html">Register</a></li> -->
               <li><a href="login.html">Login</a></li>
-              <li><a href="add_expense.html">Add Expense</a></li>
+              <li><a href="edit_expense.html">Edit Expense</a></li>
               <!-- <li><a href="edit_expense.html">Edit Expense</a></li> -->
               <li><a href="view_expense.html">View Expense</a></li>
           </ul>
@@ -58,9 +58,23 @@
             </label>
           </div>
           <div>
-            <label for="category">Category</label>
-            <input type="text" name="category" required />
+            <label for="Item">Item</label>
+            <input type="text" name="item" required />
           </div>
+          <div>
+            <label for="category">Category</label>
+            <select name="category" id="category" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="food">Food</option>
+                <option value="transportation">Transportation</option>
+                <option value="office">Office Equipment</option>
+                <option value="clothing">Clothing</option>
+                <option value="education">Education</option>
+                <option value="utilities">Utilities</option>
+                <option value="rent">Housing and Rent</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
           <div>
             <label for="amount">Amount</label>
             <input

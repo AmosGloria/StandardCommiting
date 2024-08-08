@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const expenseTableBody = document.getElementById("expenseTableBody");
 
@@ -41,10 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const editButton = document.createElement("a");
       editButton.href = `edit_expense.html?id=${expense.id}`;
       editButton.textContent = "Edit";
+      editButton.className = "edit-button"; 
       actionCell.appendChild(editButton);
 
       const deleteButton = document.createElement("button");
       deleteButton.textContent = "Delete";
+      deleteButton.className = "delete-button"; 
       deleteButton.addEventListener("click", () => deleteExpense(expense.id));
       actionCell.appendChild(deleteButton);
 
@@ -74,6 +78,8 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Error deleting expense:", error);
     }
   }
+
+  
 
   // Fetch expenses when the page loads
   fetchExpenses();

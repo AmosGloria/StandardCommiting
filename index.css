@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"); */
 
 :root {
   --bg-color: #f6f8fa;
@@ -21,13 +21,13 @@ body {
 
 }
 
-.background{
-    height: 100vh;
-    background-image: url('./background.jpg');
-    background-size: cover; /* Ensures the image covers the entire element */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-}
+/* .background{
+    height: 100vh; */
+    /* background-image: url('./background.jpg'); */
+    /* background-size: cover; Ensures the image covers the entire element */
+    /* background-position: center; Centers the image */
+    /* background-repeat: no-repeat; Prevents the image from repeating */
+/* } */
 
 h1 {
   text-align: center;
@@ -81,6 +81,7 @@ form label {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 
 form div:nth-child(-n + 2) {
   flex-basis: 100%;
@@ -240,4 +241,33 @@ nav ul li a:hover {
 
 section {
   padding: 20px;
+}
+
+#myChart {
+  display: block; 
+  margin: auto;
+  width: 50%;
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#category {
+  background-color: #ffffff; /* Background color to match a clean design */
+  border: 1px solid #dddddd; /* Light grey border for a subtle look */
+  border-radius: 6px; /* Slightly rounded corners for a modern appearance */
+  padding: 0.75rem; /* Padding inside the dropdown */
+  font-size: 1rem; /* Font size for better readability */
+  color: #333333; /* Dark grey text color for contrast */
+  width: 100%; /* Full width to match container */
+  max-width: 400px; /* Maximum width for consistency with other elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  cursor: pointer; /* Pointer cursor to indicate interaction */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on focus */
+}
+
+#update{
+  background-color: #3a3dbe;
+  color:white;
+  font-weight: bold;
 }

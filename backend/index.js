@@ -17,7 +17,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Enable CORS for all routes
 app.use(cors());
 
-
+// Set up view engine
+app.set('view engine', 'ejs');
 
 // Default route
 app.get('/', (req, res) => {
@@ -214,6 +215,12 @@ app.delete('/api/expenses/:id', authenticateToken, async (req, res) => {
     console.error('Error deleting expense:', err);
     res.status(500).send('Error deleting expense.');
   }
+});
+
+
+// Route for the main page
+app.get('/', (req, res) => {
+  res.render('index');
 });
 
 app.listen(port, () => {

@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and overall layout */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main section styles */
+section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1.1rem;
+    font-family: 'Georgia', serif; /* A more elegant serif font */
+    color: #555; /* A slightly darker gray for readability */
+    line-height: 1.8; /* Increase line height for better readability */
+    background-color: #fafafa; /* Light background color for contrast */
+    padding: 0.75rem; /* Padding inside the paragraph for spacing */
+    border-left: 4px solid #0d6efd; /* A colorful left border for emphasis */
+    margin-bottom: 1rem; /* Space below each paragraph */
+    border-radius: 4px; /* Rounded corners for the border */
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Optional styles for table (if uncommented in HTML) */
+#expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+#expense-table thead {
+    background-color: #f4f4f4;
+}
+
+#expense-table th, #expense-table td {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#expense-table th {
+    background-color: #f8f9fa;
+}
+
+#expense-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#expense-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+
+#dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px; /* Width of the rainbow shape */
+    height: 75px; /* Height of the rainbow shape */
+    border-radius: 75px 75px 0 0; /* Rounded corners to create a semi-circle */
+    background: linear-gradient(to right, #00f, #00c6ff, #007bff); /* Blue gradient for the rainbow effect */
+    color: #fff; /* White text color for contrast */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-align: center; /* Center text alignment */
+    line-height: 75px; /* Vertically center text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 1rem auto; /* Center horizontally with margin */
+}

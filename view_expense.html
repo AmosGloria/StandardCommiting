@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Expense Tracker - View Expense</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="view_expense.css">
 </head>
 <body>
     <header>
@@ -14,7 +14,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="add_expense.html">Add Expense</a></li>
-                <li><a href="view_expense.html">View Expense</a></li>
+                <li><a href="edit_expense.html">Edit Expense</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +37,10 @@
             </table>
         </section>
     </main>
-
+    <h1>Expense Amount By Category</h1>
+    <div><canvas id="myChart" width="400" height="200"></canvas></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/chart.js"></script>
     <footer>
         <p>&copy; 2024 Expense Tracker. All rights reserved.</p>
     </footer>
